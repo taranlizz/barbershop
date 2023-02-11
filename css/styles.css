@@ -29,7 +29,7 @@ h6 {
 
 ul {
   margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
 
 img {
@@ -114,6 +114,7 @@ img {
 }
 
 .container {
+  width: 100%;
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -187,6 +188,7 @@ img {
 }
 .hero-after-title {
   color: var(--third-text-color);
+  max-width: 360px;
 }
 
 /* about */
@@ -194,6 +196,20 @@ img {
 .about {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-content {
+  max-width: 470px;
 }
 
 .about-title {
@@ -219,7 +235,7 @@ img {
   color: inherit;
 }
 
-.about-btn {
+.about-btn:is(:hover, :focus) {
   color: var(--fourth-text-color);
 }
 
@@ -247,10 +263,30 @@ img {
   color: var(--third-text-color);
 }
 
+.price-lists-wrap {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
 .price-list {
   padding: 30px 20px;
-  margin-bottom: 40px;
   outline: 1px solid white;
+  width: calc((100%-30px) / 2);
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-item:nth-last-child(-n + 3) {
+  margin-top: 20px;
+}
+
+.price-btn {
+  display: block;
+  margin: 0 auto;
 }
 
 /* features */
@@ -298,10 +334,26 @@ img {
   margin-bottom: 44px;
 }
 
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.team-item-wrap {
+  padding-top: 30px;
+}
+
 .team-sub-title {
+  margin-bottom: 8px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.38;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .team-text {
@@ -309,12 +361,25 @@ img {
   line-height: 1.35;
   letter-spacing: 0.02em;
   color: var(--accent);
+  text-align: center;
 }
 
 /* gallery */
+
 .gallery {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.gallery-item {
+  width: calc((100% - 90px) / 4);
 }
 
 /* contacts */
