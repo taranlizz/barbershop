@@ -434,10 +434,21 @@ img {
   padding-bottom: 56px;
 }
 
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .footer-copy {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
+}
+
+.footer-list {
+  display: flex;
+  gap: 40px;
 }
