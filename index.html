@@ -21,7 +21,6 @@
     <!-- header -->
     <header class="header">
       <!--main navigation-->
-
       <div class="container header-container">
         <nav class="header-nav">
           <a class="header-logo" href="./index.html">
@@ -47,7 +46,9 @@
         <a class="header-tel link" href="tel:+380441111111"
           >+38 044 111 11 11</a
         >
-        <button class="header-btn button" type="button">Online-booking</button>
+        <button class="header-btn button" type="button" data-modal-open>
+          Online-booking
+        </button>
       </div>
     </header>
 
@@ -56,26 +57,28 @@
       <!-- hero section -->
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a
-                class="hero-link social-link link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                class="hero-link social-link link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-soc-wrap">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a
+                  class="hero-link social-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hero-link social-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-content">
             <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
@@ -465,24 +468,23 @@
             <h2 class="booking-title title">Online-booking</h2>
           </section>
           <section class="contacts" id="contacts">
-              <h2 class="contacts-title title">Contacts</h2>
-              <address class="contacts-address">
-                <div class="address-wrap">
-                  <svg class="address-icon">
-                    <use href="./images/icons/sprite.svg#icon-map"></use>
-                  </svg>
-                  <p class="address-text">st. Vasilkivska, 7A Kyiv, 08132</p>
-                </div>
-                <a class="address-tel tel-link" href="tel:+380441111111"
-                  >+38 044 111 11 11</a
-                >
-                <a class="address-mail" href="mailto:barbershop@email.com"
-                  >barbershop@email.com</a
-                >
-              </address>
-              <p class="contacts-time pre-title">Working hours</p>
-              <p class="contacts-time-text">Every day from 9:00 to 22:00</p>
-            </div>
+            <h2 class="contacts-title title">Contacts</h2>
+            <address class="contacts-address">
+              <div class="address-wrap">
+                <svg class="address-icon">
+                  <use href="./images/icons/sprite.svg#icon-map"></use>
+                </svg>
+                <p class="address-text">st. Vasilkivska, 7A Kyiv, 08132</p>
+              </div>
+              <a class="address-tel tel-link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+              <a class="address-mail" href="mailto:barbershop@email.com"
+                >barbershop@email.com</a
+              >
+            </address>
+            <p class="contacts-time pre-title">Working hours</p>
+            <p class="contacts-time-text">Every day from 9:00 to 22:00</p>
           </section>
         </div>
       </div>
@@ -513,5 +515,15 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-modal-btn" data-modal-close>
+          <svg class="close-modal-icon" width="8" height="8">
+            <use href="./images/icons/sprite.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
