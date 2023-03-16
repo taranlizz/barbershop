@@ -722,7 +722,7 @@ img {
   height: 24px;
   color: var(--icon-color);
   background-color: transparent;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--fourth-bg-color);
   border-radius: 50%;
   transition: color var(--tra), background-color var(--tra);
   cursor: pointer;
