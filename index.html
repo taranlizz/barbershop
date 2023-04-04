@@ -124,9 +124,7 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button class="about-btn button" type="button">
-              Online-booking
-            </button>
+            <a class="about-btn button" href="#booking">Online-booking</a>
           </div>
         </div>
       </section>
@@ -175,7 +173,7 @@
               </li>
             </ul>
           </div>
-          <button class="price-btn button" type="button">Online-booking</button>
+          <a class="price-btn button" href="#booking">Online-booking</a>
         </div>
       </section>
       <!-- features-section -->
@@ -465,7 +463,40 @@
       <div class="contacts-wrap">
         <div class="container contacts-container">
           <section class="booking">
-            <h2 class="booking-title title">Online-booking</h2>
+            <h2 class="booking-title title" id="booking">Online-booking</h2>
+            <form class="booking-form" autocomplete="off">
+              <label class="booking-form-field">
+                <input
+                  class="booking-form-input booking-item"
+                  type="text"
+                  name="username"
+                  required
+                  placeholder=" "
+                />
+                <span class="booking-form-label">Name*</span>
+              </label>
+              <label class="booking-form-field">
+                <input
+                  class="booking-form-input booking-item"
+                  type="tel"
+                  name="user-tel"
+                  required
+                  placeholder=" "
+                />
+                <span class="booking-form-label">Phone*</span>
+              </label>
+              <label class="booking-form-field textarea">
+                <textarea
+                  class="booking-form-textarea booking-item"
+                  name="username"
+                  placeholder=" "
+                ></textarea>
+                <span class="booking-form-label">Message</span>
+              </label>
+              <button class="booking-form-btn button" type="submit">
+                Send
+              </button>
+            </form>
           </section>
           <section class="contacts" id="contacts">
             <h2 class="contacts-title title">Contacts</h2>
@@ -522,6 +553,76 @@
             <use href="./images/icons/sprite.svg#icon-close-modal"></use>
           </svg>
         </button>
+        <p class="modal-title">
+          Book your haircut now and look your best soon!
+        </p>
+        <form class="modal-form">
+          <label class="modal-form-field">
+            <input
+              class="modal-form-input"
+              type="text"
+              name="username"
+              required
+              placeholder=" "
+            />
+            <span class="modal-form-label">Name</span>
+            <svg class="modal-form-icon">
+              <use href="./images/icons/sprite.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="modal-form-field">
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="user-tel"
+              required
+              placeholder=" "
+            />
+            <span class="modal-form-label">Phone</span>
+            <svg class="modal-form-icon">
+              <use href="./images/icons/sprite.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="modal-form-field">
+            <input
+              class="modal-form-input"
+              type="email"
+              name="user-email"
+              placeholder=" "
+            />
+            <span class="modal-form-label">Email</span>
+            <svg class="modal-form-icon">
+              <use href="./images/icons/sprite.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="modal-form-field textarea">
+            <textarea
+              class="modal-form-input textarea"
+              name="comment"
+              placeholder=" "
+            ></textarea>
+            <span class="modal-form-label textarea">Comment</span>
+            <svg class="modal-form-icon textarea">
+              <use href="./images/icons/sprite.svg#icon-bubble"></use>
+            </svg>
+          </label>
+          <label class="modal-checkbox-field">
+            <input
+              class="modal-form-checkbox visually-hidden"
+              type="checkbox"
+              name="privacy policy"
+            />
+            <span class="modal-checkbox-label"
+              >I accept the terms and conditions of the<a
+                href="#"
+                class="modal-checkbox-link"
+              >
+                Privacy Policy</a
+              ></span
+            >
+          </label>
+          <button class="modal-form-btn button" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
